@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hibachi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hibachi.png" translatesAutoresizingMaskIntoConstraints="NO" id="3K2-Hu-Aiy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="57:44" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7HT-Tl-EDb">
+                                <rect key="frame" x="181" y="399" width="89" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.14509803921568626" green="0.82745098039215681" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDm-mg-ZEI">
+                                <rect key="frame" x="30" y="389" width="319" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="2ir-OD-pRX" kind="show" identifier="rewardToMenuSegue" id="F6U-3K-S32"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3K2-Hu-Aiy" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4HN-l1-3wH"/>
+                            <constraint firstItem="3K2-Hu-Aiy" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EX4-V5-VXD"/>
+                            <constraint firstItem="3K2-Hu-Aiy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ytv-iW-rSK"/>
+                            <constraint firstItem="3K2-Hu-Aiy" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="u72-ZG-arv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="7HT-Tl-EDb" id="Tki-HO-Qv3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ecj-Uh-Xdv">
+            <objects>
+                <viewController id="2ir-OD-pRX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O4n-VW-lsU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hibachimenu.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6Fg-Bb-6Jd">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Fg-Bb-6Jd" firstAttribute="bottom" secondItem="q18-ab-9Zr" secondAttribute="bottom" id="4cq-8u-lqV"/>
+                            <constraint firstItem="6Fg-Bb-6Jd" firstAttribute="top" secondItem="O4n-VW-lsU" secondAttribute="top" id="dcB-Xd-u3S"/>
+                            <constraint firstItem="6Fg-Bb-6Jd" firstAttribute="leading" secondItem="q18-ab-9Zr" secondAttribute="leading" id="f0t-ek-1Jj"/>
+                            <constraint firstItem="6Fg-Bb-6Jd" firstAttribute="trailing" secondItem="q18-ab-9Zr" secondAttribute="trailing" id="gVT-AN-XFd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="q18-ab-9Zr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gy7-Sk-nS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="869.41529235382313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hibachi.png" width="750" height="1334"/>
+        <image name="hibachimenu.jpg" width="750" height="1275"/>
+    </resources>
+</document>
